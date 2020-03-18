@@ -64,5 +64,5 @@ src
 ├── scss
 │   ├── custom.scss
 │   └── style.scss
-└──index.html
+└── index.html
 ```
