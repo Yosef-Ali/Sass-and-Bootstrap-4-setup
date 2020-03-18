@@ -23,7 +23,7 @@ Add Start script to package.json
   "build": "parcel build ./src/index.html
 }
 ```
-** Customizing Bootstrap styles **
+## Customizing Bootstrap styles 
 ```css
 // scss/style.scss
 
