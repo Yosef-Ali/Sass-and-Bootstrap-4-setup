@@ -26,7 +26,7 @@ Add Start script to package.json
 ```css
 // scss/style.scss
 
-@import "~bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 ```
 
 In JavaScript file to act as the entry point for your app and import any necessary
@@ -83,14 +83,14 @@ Two options: include all of Bootstrap, or pick the parts you need.
 // Option B: Include parts of Bootstrap
 
 // Required
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 // Optional
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/code";
-@import "../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
 ```
