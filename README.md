@@ -2,9 +2,9 @@
 
 ## Using Parcel package bundler
 
-I prefer using Yarn
+I prefer using Yarn package manager 
 
-First we need to install the dependencies for Bootstrap and FontAwesome.
+First install the dependencies for Bootstrap and FontAwesome.
 
 ```bash
 yarn add bootstrap jquery popper.js
