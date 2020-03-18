@@ -57,6 +57,9 @@ Then, in my index.html file, I add a reference to my JavaScript entry point.
 yarn start
 ````
 Done!
+
+### File structure
+
 ```html
 src
 ├── js
@@ -65,4 +68,12 @@ src
 │   ├── custom.scss
 │   └── style.scss
 └── index.html
+```
+### Global Vaiable Importing
+In **custom.scss,** import Bootstrap’s source Sass files.
+```css
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 ```
