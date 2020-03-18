@@ -1,8 +1,6 @@
 # Simple Sass Bootstrap installation
 
-# Heading 1
-
-## Using Parcel package bundler
+** Using Parcel package bundler **
 
 I prefer using Yarn package manager 
 
@@ -25,7 +23,7 @@ Add Start script to package.json
   "build": "parcel build ./src/index.html
 }
 ```
-## Customizing Bootstrap styles
+** Customizing Bootstrap styles **
 ```css
 // scss/style.scss
 
