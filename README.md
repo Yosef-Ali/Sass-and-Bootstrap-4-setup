@@ -1,6 +1,6 @@
 # Simple Sass Bootstrap installation
 
-## Using Parcel package bundler
+### Using Parcel package bundler
 I prefer using Yarn package manager 
 
 First install the dependencies for Bootstrap and FontAwesome.
