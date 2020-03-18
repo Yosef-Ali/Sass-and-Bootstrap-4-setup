@@ -70,10 +70,27 @@ src
 └── index.html
 ```
 ### Global Vaiable Importing
-In **custom.scss,** import Bootstrap’s source Sass files.
+In **custom.scss**, import Bootstrap’s source Sass files.
 ```css
 // Custom.scss
 // Option A: Include all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+```
+Two options: include all of Bootstrap, or pick the parts you need.
+```css
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
 ```
