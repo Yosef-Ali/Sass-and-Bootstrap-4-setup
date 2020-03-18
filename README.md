@@ -57,3 +57,12 @@ Then, in my index.html file, I add a reference to my JavaScript entry point.
 yarn start
 ````
 Done!
+```html
+src
+├── js
+│   └── script.js
+├── scss
+│   ├── custom.scss
+│   └── style.scss
+└──index.html
+```
