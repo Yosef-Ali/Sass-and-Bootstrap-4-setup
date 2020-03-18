@@ -94,3 +94,14 @@ Two options: include all of Bootstrap, or pick the parts you need.
 @import "../../node_modules/bootstrap/scss/code";
 @import "../../node_modules/bootstrap/scss/grid";
 ```
+begin to modify any of the Sass variables and maps in **custom.scss**. the suggest is using the full import stack from our **bootstrap.scss** file as your starting point.
+#### Variable defaults
+Remove the **!default** flag, when ever overiding variables and overrides must come before imported **Bootstrap’s Sass** files.
+```css
+// Your variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+```
