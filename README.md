@@ -1,5 +1,7 @@
 # Simple Sass Bootstrap installation
 
+# Heading 1
+
 ## Using Parcel package bundler
 
 I prefer using Yarn package manager 
