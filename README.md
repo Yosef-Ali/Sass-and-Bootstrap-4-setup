@@ -15,11 +15,11 @@ Add Start script to package.json
 
 ```json
 // package.json
-// if necessary add "build": "parcel build ./src/index.html
+// if necessary add "build": "parcel build ./src/index.html"
 
 "scripts": {
   "start": "parcel ./src/index.html",
-  "build": "parcel build ./src/index.html
+  "build": "parcel build ./src/index.html"
 }
 ```
 ### Customizing Bootstrap styles 
