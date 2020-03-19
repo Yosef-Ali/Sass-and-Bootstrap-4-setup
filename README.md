@@ -1,10 +1,9 @@
 # Simple Sass Bootstrap installation
 
-## Using Parcel package bundler
+### Using Parcel package bundler
+I prefer using Yarn package manager 
 
-I prefer using Yarn
-
-First we need to install the dependencies for Bootstrap and FontAwesome.
+First install the dependencies for Bootstrap and FontAwesome.
 
 ```bash
 yarn add bootstrap jquery popper.js
@@ -23,11 +22,11 @@ Add Start script to package.json
   "build": "parcel build ./src/index.html
 }
 ```
-## Customizing Bootstrap styles
+### Customizing Bootstrap styles 
 ```css
 // scss/style.scss
 
-@import "~bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 ```
 
 In JavaScript file to act as the entry point for your app and import any necessary
@@ -58,3 +57,55 @@ Then, in my index.html file, I add a reference to my JavaScript entry point.
 yarn start
 ````
 Done!
+
+### File structure
+
+```html
+src
+├── js
+│   └── script.js
+├── scss
+│   ├── custom.scss
+│   └── style.scss
+└── index.html
+```
+### Global Vaiable Importing
+In **custom.scss**, import Bootstrap’s source Sass files.
+```css
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+```
+Two options: include all of Bootstrap, or pick the parts you need.
+```css
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+```
+begin to modify any of the Sass variables and maps in **custom.scss**. the suggest is using the full import stack from our **bootstrap.scss** file as your starting point.
+#### Variable defaults
+Remove the **!default** flag, when ever overiding variables and overrides must come before imported **Bootstrap’s Sass** files.
+```css
+// Your variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+```
+### Customizing bootstrap Theme
+
+I use for this project for the link [themestr.app for bootstrap](https://themestr.app/)
+
