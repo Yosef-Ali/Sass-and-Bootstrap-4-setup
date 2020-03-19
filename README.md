@@ -34,10 +34,8 @@ In JavaScript file to act as the entry point for your app and import any necessa
 //  js/script.js
 
 import 'bootstrap'
-import '@fortawesome/fontawesome-free/css/all.css'
-import './style.scss' // Import our scss file
 ```
-Then, in my index.html file, I add a reference to my JavaScript entry point.
+Then, in my index.html file, I add a reference to my Sass and JavaScript entry point.
 
 ```html
 <!-- index.html -->
@@ -45,6 +43,7 @@ Then, in my index.html file, I add a reference to my JavaScript entry point.
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="scss/style.scss" />
   </head>
   <body>
       <!-- Here 👇 -->
@@ -52,7 +51,9 @@ Then, in my index.html file, I add a reference to my JavaScript entry point.
   </body>
 </html>
 ```
-### Starts up a development server 
+### Starts up a development server
+parcel will automaticaly handel the sass part.
+
 ```bahs
 yarn start
 ````
