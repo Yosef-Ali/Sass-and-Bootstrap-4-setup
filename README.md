@@ -105,3 +105,7 @@ $body-color: #111;
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
 ```
+### Customizing bootstrap Theme
+
+I use for this project for the link [themestr.app for bootstrap](https://themestr.app/)
+
