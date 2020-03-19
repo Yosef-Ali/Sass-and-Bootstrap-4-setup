@@ -1,0 +1,68 @@
+/* import only the necessary Bootstrap files */
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+/* -------begin customization-------- */
+/* change the primary theme color, and add a new theme color */
+$headings-font-family: Asap;
+// $primary: #00adb5;
+// $secondary: #f8b500;
+// $body-bg: #393e46;
+// $text-muted: #6c757d;
+// $body-color: $text-muted;
+// $border-radius: 8px;
+
+/* other custom theme */
+// $enable-grid-classes: false;
+
+$primary: #919eaf;
+$secondary: #857c72;
+$default: #b5b8b3;
+$success: #28a745;
+$danger: #dc3545;
+$info: #395e82;
+$warning: #d9cd9c;
+$light: #f9f6f7;
+$dark: #969492;
+
+/*! `Greyson` Bootstrap 4 theme */
+
+$headings-font-family: Oswald;
+$font-family-base: Muli;
+
+$primary: #2f3c48;
+$secondary: #6f7f8c;
+$success: #3e4d59;
+$danger: #cc330d;
+$info: #5c8f94;
+$warning: #6e9fa5;
+$light: #eceeec;
+$dark: #1e2b37;
+$enable-gradients: true;
+$spacer: 0.7rem;
+$border-width: 0;
+$btn-border-radius: 1.35rem;
+
+// Add SASS theme customizations here..
+
+/* making font responsive */
+$font-size-base: 1.8rem;
+$embed-responsive-font-size: true;
+$rfs-base-font-size: 1rem;
+
+$theme-colors: (
+	'primary': $primary,
+	'spacial': #88ce4f,
+	//custom color
+		'secondary': $secondary,
+	'success': $success,
+	'danger': $danger,
+	'info': $info,
+	'warning': $warning,
+	'light': $light,
+	'dark': $dark
+);
+/* -------end customization-------- */
+
+/* finally, import Bootstrap to set the changes! */
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
