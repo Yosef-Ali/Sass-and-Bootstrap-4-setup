@@ -107,6 +107,47 @@ $body-color: #111;
 @import "../node_modules/bootstrap/scss/bootstrap";
 ```
 ### Customizing bootstrap Theme
+```css
+/* -------end customization-------- */
+$headings-font-family: Oswald;
+$font-family-base: Muli;
+
+$primary: #2f3c48;
+$secondary: #6f7f8c;
+$success: #3e4d59;
+$danger: #cc330d;
+$info: #5c8f94;
+$warning: #6e9fa5;
+$light: #eceeec;
+$dark: #1e2b37;
+
+$enable-gradients: true;
+$spacer: 0.7rem;
+$border-width: 0;
+$btn-border-radius: 1.35rem;
+
+// Add SASS theme customizations here..
+
+/* making font responsive */
+$font-size-base: 1.8rem;
+$embed-responsive-font-size: true;
+$rfs-base-font-size: 1rem;
+
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'success': $success,
+	'danger': $danger,
+	'info': $info,
+	'warning': $warning,
+	'light': $light,
+	'dark': $dark,
+  
+  'spacial': #88ce4f,
+	//custom color
+);
+/* -------end customization-------- */
+```
 
 I use for this project for the link [themestr.app for bootstrap](https://themestr.app/)
 
